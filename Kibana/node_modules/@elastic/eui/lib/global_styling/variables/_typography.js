@@ -1,0 +1,89 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.font = exports.fontWeight = exports.fontBase = exports.SCALES = exports.fontScale = void 0;
+
+var _common = require("../../components/common");
+
+var _utils = require("../../services/theme/utils");
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+/*
+ * Font scale
+ */
+// Typographic scale -- loosely based on Major Third (1.250)
+var fontScale = {
+  xxxs: 0.5625,
+  xxs: 0.6875,
+  xs: 0.75,
+  s: 0.875,
+  m: 1,
+  l: 1.25,
+  xl: 1.75,
+  xxl: 2.125
+};
+exports.fontScale = fontScale;
+var SCALES = (0, _common.keysOf)(fontScale);
+exports.SCALES = SCALES;
+// Families & base font settings
+var fontBase = {
+  family: "'Inter UI', BlinkMacSystemFont, Helvetica, Arial, sans-serif",
+  familyCode: "'Roboto Mono', Menlo, Courier, monospace",
+  // Careful using ligatures. Code editors like ACE will often error because of width calculations
+  featureSettings: "'calt' 1, 'kern' 1, 'liga' 1",
+  baseline: (0, _utils.computed)(function (_ref) {
+    var _ref2 = _slicedToArray(_ref, 1),
+        base = _ref2[0];
+
+    return base / 4;
+  }, ['base']),
+  lineHeightMultiplier: 1.5
+};
+/*
+ * Font weights
+ */
+
+exports.fontBase = fontBase;
+var fontWeight = {
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semiBold: 600,
+  bold: 700
+};
+/*
+ * Font
+ */
+
+exports.fontWeight = fontWeight;
+
+var font = _objectSpread(_objectSpread({}, fontBase), {}, {
+  scale: fontScale,
+  weight: fontWeight,
+  body: {
+    scale: 'm',
+    weight: 'regular',
+    letterSpacing: '-.005em'
+  }
+});
+
+exports.font = font;
