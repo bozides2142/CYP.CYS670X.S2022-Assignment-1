@@ -1,0 +1,15 @@
+[2022-04-06 22:35:29] [info]  [16512] Commons Daemon procrun (1.1.0.0 64-bit) started
+[2022-04-06 22:35:29] [info]  [16512] Service elasticsearch-service-x64 name Elasticsearch 8.1.2 (elasticsearch-service-x64)
+[2022-04-06 22:35:29] [info]  [16512] Service 'elasticsearch-service-x64' installed
+[2022-04-06 22:35:29] [info]  [16512] Commons Daemon procrun finished
+[2022-04-06 22:35:45] [info]  [13444] Commons Daemon procrun (1.1.0.0 64-bit) started
+[2022-04-06 22:35:45] [info]  [13444] Starting service 'elasticsearch-service-x64' ...
+[2022-04-06 22:35:45] [info]  [10428] Commons Daemon procrun (1.1.0.0 64-bit) started
+[2022-04-06 22:35:45] [info]  [10428] Running 'elasticsearch-service-x64' Service...
+[2022-04-06 22:35:45] [info]  [10928] Starting service...
+[2022-04-06 22:35:52] [info]  [10928] Service started in 6715 ms.
+[2022-04-06 22:35:54] [info]  [13444] Started service 'elasticsearch-service-x64'
+[2022-04-06 22:35:54] [info]  [13444] Start service finished, returning 1
+[2022-04-06 22:35:54] [info]  [13444] Commons Daemon procrun finished
+[2022-04-06 22:35:58] [info]  [10428] Run service finished.
+[2022-04-06 22:35:58] [info]  [10428] Commons Daemon procrun finished

@@ -1,0 +1,718 @@
+[2022-04-08T00:38:03,065][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] version[8.1.2], pid[2220], build[default/zip/31df9689e80bad366ac20176aa7f2371ea5eb4c1/2022-03-29T21:18:59.991429448Z], OS[Windows 10/10.0/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.2/17.0.2+8]
+[2022-04-08T00:38:03,121][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] JVM home [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\jdk], using bundled JDK [true]
+[2022-04-08T00:38:03,138][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -Djava.security.manager=allow, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -XX:+UseG1GC, -Djava.io.tmpdir=C:\Users\Michael\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms8134m, -Xmx8134m, -XX:MaxDirectMemorySize=4265607168, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Delasticsearch, -Des.path.home=C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2, -Des.path.conf=C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config, -Des.distribution.flavor=default, -Des.distribution.type=zip, -Des.bundled_jdk=true]
+[2022-04-08T00:38:13,979][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [aggs-matrix-stats]
+[2022-04-08T00:38:13,980][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [analysis-common]
+[2022-04-08T00:38:13,981][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [constant-keyword]
+[2022-04-08T00:38:13,981][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [data-streams]
+[2022-04-08T00:38:13,981][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [frozen-indices]
+[2022-04-08T00:38:13,982][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-common]
+[2022-04-08T00:38:13,982][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-geoip]
+[2022-04-08T00:38:13,983][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-user-agent]
+[2022-04-08T00:38:13,983][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [kibana]
+[2022-04-08T00:38:13,984][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-expression]
+[2022-04-08T00:38:13,984][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-mustache]
+[2022-04-08T00:38:13,986][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-painless]
+[2022-04-08T00:38:13,986][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [legacy-geo]
+[2022-04-08T00:38:13,987][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [mapper-extras]
+[2022-04-08T00:38:13,988][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [mapper-version]
+[2022-04-08T00:38:13,990][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [old-lucene-versions]
+[2022-04-08T00:38:13,991][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [parent-join]
+[2022-04-08T00:38:13,993][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [percolator]
+[2022-04-08T00:38:13,994][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [rank-eval]
+[2022-04-08T00:38:13,995][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [reindex]
+[2022-04-08T00:38:13,995][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repositories-metering-api]
+[2022-04-08T00:38:13,995][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-azure]
+[2022-04-08T00:38:13,996][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-encrypted]
+[2022-04-08T00:38:13,997][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-gcs]
+[2022-04-08T00:38:13,997][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-s3]
+[2022-04-08T00:38:13,998][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-url]
+[2022-04-08T00:38:13,998][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [runtime-fields-common]
+[2022-04-08T00:38:13,999][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [search-business-rules]
+[2022-04-08T00:38:13,999][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [searchable-snapshots]
+[2022-04-08T00:38:14,000][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [snapshot-based-recoveries]
+[2022-04-08T00:38:14,000][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [snapshot-repo-test-kit]
+[2022-04-08T00:38:14,001][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [spatial]
+[2022-04-08T00:38:14,001][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [transform]
+[2022-04-08T00:38:14,002][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [transport-netty4]
+[2022-04-08T00:38:14,002][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [unsigned-long]
+[2022-04-08T00:38:14,003][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [vector-tile]
+[2022-04-08T00:38:14,003][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [vectors]
+[2022-04-08T00:38:14,004][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [wildcard]
+[2022-04-08T00:38:14,006][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-aggregate-metric]
+[2022-04-08T00:38:14,009][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-analytics]
+[2022-04-08T00:38:14,010][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-async]
+[2022-04-08T00:38:14,011][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-async-search]
+[2022-04-08T00:38:14,011][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-autoscaling]
+[2022-04-08T00:38:14,012][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ccr]
+[2022-04-08T00:38:14,013][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-core]
+[2022-04-08T00:38:14,013][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-deprecation]
+[2022-04-08T00:38:14,014][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-enrich]
+[2022-04-08T00:38:14,014][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-eql]
+[2022-04-08T00:38:14,015][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-fleet]
+[2022-04-08T00:38:14,015][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-graph]
+[2022-04-08T00:38:14,015][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-identity-provider]
+[2022-04-08T00:38:14,016][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ilm]
+[2022-04-08T00:38:14,016][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-logstash]
+[2022-04-08T00:38:14,016][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ml]
+[2022-04-08T00:38:14,016][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-monitoring]
+[2022-04-08T00:38:14,018][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ql]
+[2022-04-08T00:38:14,018][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-rollup]
+[2022-04-08T00:38:14,018][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-security]
+[2022-04-08T00:38:14,018][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-shutdown]
+[2022-04-08T00:38:14,019][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-sql]
+[2022-04-08T00:38:14,020][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-stack]
+[2022-04-08T00:38:14,021][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-text-structure]
+[2022-04-08T00:38:14,025][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-voting-only-node]
+[2022-04-08T00:38:14,026][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-watcher]
+[2022-04-08T00:38:14,026][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] no plugins loaded
+[2022-04-08T00:38:14,410][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-MTC8R1N] using [1] data paths, mounts [[OS (C:)]], net usable_space [118.6gb], net total_space [475.8gb], types [NTFS]
+[2022-04-08T00:38:14,411][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-MTC8R1N] heap size [7.9gb], compressed ordinary object pointers [true]
+[2022-04-08T00:38:14,533][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] node name [DESKTOP-MTC8R1N], node ID [jBBIhB9QSAaxDHHAs6qgSQ], cluster name [elasticsearch], roles [ingest, data_frozen, ml, data_hot, transform, data_content, data_warm, master, remote_cluster_client, data, data_cold]
+[2022-04-08T00:38:20,821][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [DESKTOP-MTC8R1N] [controller/14012] [Main.cc@123] controller (64 bit): Version 8.1.2 (Build aefa35c80ac77e) Copyright (c) 2022 Elasticsearch BV
+[2022-04-08T00:38:21,157][INFO ][o.e.x.s.Security         ] [DESKTOP-MTC8R1N] Security is enabled
+[2022-04-08T00:38:21,451][INFO ][o.e.x.s.a.Realms         ] [DESKTOP-MTC8R1N] license mode is [trial], currently licensed security realms are [reserved/reserved,file/default_file,native/default_native]
+[2022-04-08T00:38:21,471][INFO ][o.e.x.s.a.s.FileRolesStore] [DESKTOP-MTC8R1N] parsed [0] roles from file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\roles.yml]
+[2022-04-08T00:38:28,457][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb]
+[2022-04-08T00:38:28,471][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb_COPYRIGHT.txt]
+[2022-04-08T00:38:28,482][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-04-08T00:38:28,495][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb_LICENSE.txt]
+[2022-04-08T00:38:28,504][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb]
+[2022-04-08T00:38:28,519][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_COPYRIGHT.txt]
+[2022-04-08T00:38:28,624][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-04-08T00:38:28,705][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_LICENSE.txt]
+[2022-04-08T00:38:28,736][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_README.txt]
+[2022-04-08T00:38:28,842][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb]
+[2022-04-08T00:38:28,884][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb_COPYRIGHT.txt]
+[2022-04-08T00:38:28,991][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-04-08T00:38:29,012][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb_LICENSE.txt]
+[2022-04-08T00:38:37,960][INFO ][o.e.t.n.NettyAllocator   ] [DESKTOP-MTC8R1N] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=4mb}]
+[2022-04-08T00:38:38,385][INFO ][o.e.i.r.RecoverySettings ] [DESKTOP-MTC8R1N] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+[2022-04-08T00:38:38,752][INFO ][o.e.d.DiscoveryModule    ] [DESKTOP-MTC8R1N] using discovery type [multi-node] and seed hosts providers [settings]
+[2022-04-08T00:38:52,984][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] initialized
+[2022-04-08T00:38:52,989][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] starting ...
+[2022-04-08T00:38:54,409][INFO ][o.e.x.s.c.f.PersistentCache] [DESKTOP-MTC8R1N] persistent cache index loaded
+[2022-04-08T00:38:54,418][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [DESKTOP-MTC8R1N] deprecation component started
+[2022-04-08T00:38:55,806][INFO ][o.e.t.TransportService   ] [DESKTOP-MTC8R1N] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2022-04-08T00:38:56,948][INFO ][o.e.c.c.Coordinator      ] [DESKTOP-MTC8R1N] cluster UUID [92OwXvkPS3KNtv8FwgwOYQ]
+[2022-04-08T00:38:57,457][INFO ][o.e.c.s.MasterService    ] [DESKTOP-MTC8R1N] elected-as-master ([1] nodes joined)[{DESKTOP-MTC8R1N}{jBBIhB9QSAaxDHHAs6qgSQ}{xhGUNhrARLG4bmtSAZQjfA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} completing election, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 4, version: 80, delta: master node changed {previous [], current [{DESKTOP-MTC8R1N}{jBBIhB9QSAaxDHHAs6qgSQ}{xhGUNhrARLG4bmtSAZQjfA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2022-04-08T00:38:57,763][INFO ][o.e.c.s.ClusterApplierService] [DESKTOP-MTC8R1N] master node changed {previous [], current [{DESKTOP-MTC8R1N}{jBBIhB9QSAaxDHHAs6qgSQ}{xhGUNhrARLG4bmtSAZQjfA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 4, version: 80, reason: Publication{term=4, version=80}
+[2022-04-08T00:38:58,143][INFO ][o.e.l.LicenseService     ] [DESKTOP-MTC8R1N] license [20b5b0b8-b3a4-4c91-b70d-82789cab8b4a] mode [basic] - valid
+[2022-04-08T00:38:58,230][INFO ][o.e.h.AbstractHttpServerTransport] [DESKTOP-MTC8R1N] publish_address {192.168.178.23:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}, {192.168.178.23:9200}
+[2022-04-08T00:38:58,251][INFO ][o.e.x.s.a.Realms         ] [DESKTOP-MTC8R1N] license mode is [basic], currently licensed security realms are [reserved/reserved,file/default_file,native/default_native]
+[2022-04-08T00:38:58,265][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] started
+[2022-04-08T00:38:58,285][INFO ][o.e.g.GatewayService     ] [DESKTOP-MTC8R1N] recovered [2] indices into cluster_state
+[2022-04-08T00:39:01,588][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] current.health="GREEN" message="Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.geoip_databases][0]]])." previous.health="RED" reason="shards started [[.geoip_databases][0]]"
+[2022-04-08T00:39:01,663][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-Country.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb.tmp.gz]
+[2022-04-08T00:39:01,674][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-City.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb.tmp.gz]
+[2022-04-08T00:39:01,695][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-ASN.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb.tmp.gz]
+[2022-04-08T00:39:03,044][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-Country.mmdb]
+[2022-04-08T00:39:03,185][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-ASN.mmdb]
+[2022-04-08T00:39:03,480][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-ASN.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb.tmp.gz]
+[2022-04-08T00:39:03,487][INFO ][o.e.i.g.GeoIpDownloader  ] [DESKTOP-MTC8R1N] successfully downloaded geoip database [GeoLite2-ASN.mmdb]
+[2022-04-08T00:39:04,064][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb]
+[2022-04-08T00:39:04,065][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-ASN.mmdb]
+[2022-04-08T00:39:05,459][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-City.mmdb]
+[2022-04-08T00:39:12,169][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-City.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb.tmp.gz]
+[2022-04-08T00:39:12,176][INFO ][o.e.i.g.GeoIpDownloader  ] [DESKTOP-MTC8R1N] successfully downloaded geoip database [GeoLite2-City.mmdb]
+[2022-04-08T00:39:14,973][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb]
+[2022-04-08T00:39:14,975][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-City.mmdb]
+[2022-04-08T00:39:15,070][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-Country.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb.tmp.gz]
+[2022-04-08T00:39:15,076][INFO ][o.e.i.g.GeoIpDownloader  ] [DESKTOP-MTC8R1N] successfully downloaded geoip database [GeoLite2-Country.mmdb]
+[2022-04-08T00:39:15,202][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb]
+[2022-04-08T00:39:15,203][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-Country.mmdb]
+[2022-04-08T01:05:09,572][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51889}
+[2022-04-08T01:05:09,579][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51890}
+[2022-04-08T01:05:09,586][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51891}
+[2022-04-08T01:05:09,593][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51892}
+[2022-04-08T01:05:14,573][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51894}
+[2022-04-08T01:05:14,576][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51895}
+[2022-04-08T01:05:14,580][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51896}
+[2022-04-08T01:05:14,584][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51897}
+[2022-04-08T01:05:19,579][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51900}
+[2022-04-08T01:05:19,584][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51901}
+[2022-04-08T01:05:19,587][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51902}
+[2022-04-08T01:05:19,592][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51903}
+[2022-04-08T01:05:24,588][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51905}
+[2022-04-08T01:05:24,591][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51906}
+[2022-04-08T01:05:24,595][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51907}
+[2022-04-08T01:05:24,599][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:51908}
+[2022-04-08T01:22:51,549][INFO ][o.e.x.s.a.f.FileUserPasswdStore] [DESKTOP-MTC8R1N] users file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users] changed. updating users...
+[2022-04-08T01:22:51,556][INFO ][o.e.x.s.a.f.FileUserRolesStore] [DESKTOP-MTC8R1N] users roles file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users_roles] changed. updating users roles...
+[2022-04-08T01:22:56,578][INFO ][o.e.x.s.a.f.FileUserPasswdStore] [DESKTOP-MTC8R1N] users file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users] changed. updating users...
+[2022-04-08T01:22:56,584][INFO ][o.e.x.s.a.f.FileUserRolesStore] [DESKTOP-MTC8R1N] users roles file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users_roles] changed. updating users roles...
+[2022-04-08T01:24:11,939][INFO ][o.e.x.s.a.f.FileUserPasswdStore] [DESKTOP-MTC8R1N] users file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users] changed. updating users...
+[2022-04-08T01:24:11,944][INFO ][o.e.x.s.a.f.FileUserRolesStore] [DESKTOP-MTC8R1N] users roles file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users_roles] changed. updating users roles...
+[2022-04-08T01:24:16,958][INFO ][o.e.x.s.a.f.FileUserPasswdStore] [DESKTOP-MTC8R1N] users file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users] changed. updating users...
+[2022-04-08T01:24:16,964][INFO ][o.e.x.s.a.f.FileUserRolesStore] [DESKTOP-MTC8R1N] users roles file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users_roles] changed. updating users roles...
+[2022-04-08T01:27:13,555][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52214}
+[2022-04-08T01:27:13,561][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52215}
+[2022-04-08T01:27:13,565][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52216}
+[2022-04-08T01:27:13,568][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52217}
+[2022-04-08T01:27:18,559][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52218}
+[2022-04-08T01:27:18,563][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52219}
+[2022-04-08T01:27:18,566][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52220}
+[2022-04-08T01:27:18,569][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52221}
+[2022-04-08T01:27:23,572][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52222}
+[2022-04-08T01:27:23,577][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52223}
+[2022-04-08T01:27:23,580][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52224}
+[2022-04-08T01:27:23,583][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52225}
+[2022-04-08T01:27:28,584][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52239}
+[2022-04-08T01:27:28,589][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52240}
+[2022-04-08T01:27:28,594][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52241}
+[2022-04-08T01:27:28,598][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52242}
+[2022-04-08T01:27:33,590][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52243}
+[2022-04-08T01:27:33,595][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52244}
+[2022-04-08T01:27:33,600][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52245}
+[2022-04-08T01:27:33,607][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52246}
+[2022-04-08T01:27:38,592][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52247}
+[2022-04-08T01:27:38,596][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52248}
+[2022-04-08T01:27:38,600][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52249}
+[2022-04-08T01:27:38,604][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52250}
+[2022-04-08T01:27:43,606][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52251}
+[2022-04-08T01:27:43,610][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52252}
+[2022-04-08T01:27:43,613][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52253}
+[2022-04-08T01:27:43,615][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52254}
+[2022-04-08T01:27:47,922][INFO ][o.e.x.s.a.f.FileUserPasswdStore] [DESKTOP-MTC8R1N] users file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users] changed. updating users...
+[2022-04-08T01:27:47,927][INFO ][o.e.x.s.a.f.FileUserRolesStore] [DESKTOP-MTC8R1N] users roles file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users_roles] changed. updating users roles...
+[2022-04-08T01:27:48,614][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52259}
+[2022-04-08T01:27:48,618][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52260}
+[2022-04-08T01:27:48,622][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52261}
+[2022-04-08T01:27:48,625][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52262}
+[2022-04-08T01:27:52,954][INFO ][o.e.x.s.a.f.FileUserPasswdStore] [DESKTOP-MTC8R1N] users file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users] changed. updating users...
+[2022-04-08T01:27:52,959][INFO ][o.e.x.s.a.f.FileUserRolesStore] [DESKTOP-MTC8R1N] users roles file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\users_roles] changed. updating users roles...
+[2022-04-08T01:27:53,626][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52264}
+[2022-04-08T01:27:53,629][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52265}
+[2022-04-08T01:27:53,632][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52266}
+[2022-04-08T01:27:53,636][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52267}
+[2022-04-08T01:27:58,631][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52268}
+[2022-04-08T01:27:58,635][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52269}
+[2022-04-08T01:27:58,638][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52270}
+[2022-04-08T01:27:58,640][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52271}
+[2022-04-08T01:28:03,610][INFO ][o.e.c.m.MetadataCreateIndexService] [DESKTOP-MTC8R1N] [.kibana_8.1.2_001] creating index, cause [api], templates [], shards [1]/[1]
+[2022-04-08T01:28:03,622][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] updating number_of_replicas to [0] for indices [.kibana_8.1.2_001]
+[2022-04-08T01:28:03,791][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52277}
+[2022-04-08T01:28:03,805][INFO ][o.e.c.m.MetadataCreateIndexService] [DESKTOP-MTC8R1N] [.kibana_task_manager_8.1.2_001] creating index, cause [api], templates [], shards [1]/[1]
+[2022-04-08T01:28:03,810][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] updating number_of_replicas to [0] for indices [.kibana_task_manager_8.1.2_001]
+[2022-04-08T01:28:03,831][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52278}
+[2022-04-08T01:28:03,844][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52279}
+[2022-04-08T01:28:03,854][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:52280}
+[2022-04-08T01:28:03,973][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.kibana_task_manager_8.1.2_001][0]]])." previous.health="YELLOW" reason="shards started [[.kibana_task_manager_8.1.2_001][0]]"
+[2022-04-08T01:28:06,308][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [DESKTOP-MTC8R1N] adding index lifecycle policy [.alerts-ilm-policy]
+[2022-04-08T01:28:06,440][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.kibana_task_manager_8.1.2_001/pLqERiz0QdyPX1DDstROiw] update_mapping [_doc]
+[2022-04-08T01:28:07,958][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding component template [.alerts-technical-mappings]
+[2022-04-08T01:28:08,555][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding component template [.alerts-ecs-mappings]
+[2022-04-08T01:28:08,628][INFO ][o.e.c.m.MetadataCreateIndexService] [DESKTOP-MTC8R1N] [.apm-agent-configuration] creating index, cause [api], templates [], shards [1]/[1]
+[2022-04-08T01:28:08,633][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] updating number_of_replicas to [0] for indices [.apm-agent-configuration]
+[2022-04-08T01:28:08,742][INFO ][o.e.c.m.MetadataCreateIndexService] [DESKTOP-MTC8R1N] [.apm-custom-link] creating index, cause [api], templates [], shards [1]/[1]
+[2022-04-08T01:28:08,747][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] updating number_of_replicas to [0] for indices [.apm-custom-link]
+[2022-04-08T01:28:08,941][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.kibana_8.1.2_001/hWZW3pekRxKL0N-vEitE6w] update_mapping [_doc]
+[2022-04-08T01:28:11,809][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.apm-custom-link][0]]])." previous.health="YELLOW" reason="shards started [[.apm-custom-link][0]]"
+[2022-04-08T01:28:12,139][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding component template [.alerts-observability.uptime.alerts-mappings]
+[2022-04-08T01:28:12,324][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding component template [.alerts-security.alerts-mappings]
+[2022-04-08T01:28:12,538][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding component template [.alerts-observability.logs.alerts-mappings]
+[2022-04-08T01:28:12,617][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding component template [.alerts-observability.metrics.alerts-mappings]
+[2022-04-08T01:28:12,898][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding component template [.alerts-observability.apm.alerts-mappings]
+[2022-04-08T01:28:13,101][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding index template [.kibana_security_session_index_template_1] for index patterns [.kibana_security_session_1]
+[2022-04-08T01:28:13,258][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.kibana_8.1.2_001/hWZW3pekRxKL0N-vEitE6w] update_mapping [_doc]
+[2022-04-08T01:28:13,331][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.kibana_8.1.2_001/hWZW3pekRxKL0N-vEitE6w] update_mapping [_doc]
+[2022-04-08T01:28:13,383][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.kibana_8.1.2_001/hWZW3pekRxKL0N-vEitE6w] update_mapping [_doc]
+[2022-04-08T01:28:13,428][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.kibana_8.1.2_001/hWZW3pekRxKL0N-vEitE6w] update_mapping [_doc]
+[2022-04-08T01:28:13,984][INFO ][o.e.c.m.MetadataCreateIndexService] [DESKTOP-MTC8R1N] [.kibana_security_session_1] creating index, cause [api], templates [.kibana_security_session_index_template_1], shards [1]/[0]
+[2022-04-08T01:28:14,370][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [DESKTOP-MTC8R1N] adding index lifecycle policy [.preview.alerts-security.alerts-policy]
+[2022-04-08T01:28:14,682][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.kibana_security_session_1][0]]])." previous.health="YELLOW" reason="shards started [[.kibana_security_session_1][0]]"
+[2022-04-08T01:28:15,003][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding component template [.preview.alerts-security.alerts-mappings]
+[2022-04-08T01:28:15,134][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding component template [.fleet_component_template-1]
+[2022-04-08T01:28:15,231][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [DESKTOP-MTC8R1N] adding index lifecycle policy [kibana-event-log-policy]
+[2022-04-08T01:28:15,338][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [DESKTOP-MTC8R1N] adding index lifecycle policy [kibana-reporting]
+[2022-04-08T01:28:15,471][INFO ][o.e.c.m.MetadataIndexTemplateService] [DESKTOP-MTC8R1N] adding index template [.kibana-event-log-8.1.2-template] for index patterns [.kibana-event-log-8.1.2-*]
+[2022-04-08T01:28:15,703][INFO ][o.e.c.m.MetadataCreateIndexService] [DESKTOP-MTC8R1N] [.kibana-event-log-8.1.2-000001] creating index, cause [api], templates [.kibana-event-log-8.1.2-template], shards [1]/[1]
+[2022-04-08T01:28:15,723][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] updating number_of_replicas to [0] for indices [.kibana-event-log-8.1.2-000001]
+[2022-04-08T01:28:15,877][INFO ][o.e.x.i.IndexLifecycleTransition] [DESKTOP-MTC8R1N] moving index [.kibana-event-log-8.1.2-000001] from [null] to [{"phase":"new","action":"complete","name":"complete"}] in policy [kibana-event-log-policy]
+[2022-04-08T01:28:16,000][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.kibana-event-log-8.1.2-000001][0]]])." previous.health="YELLOW" reason="shards started [[.kibana-event-log-8.1.2-000001][0]]"
+[2022-04-08T01:28:16,083][INFO ][o.e.x.i.IndexLifecycleTransition] [DESKTOP-MTC8R1N] moving index [.kibana-event-log-8.1.2-000001] from [{"phase":"new","action":"complete","name":"complete"}] to [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] in policy [kibana-event-log-policy]
+[2022-04-08T01:28:16,199][INFO ][o.e.x.i.IndexLifecycleTransition] [DESKTOP-MTC8R1N] moving index [.kibana-event-log-8.1.2-000001] from [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] to [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}] in policy [kibana-event-log-policy]
+[2022-04-08T01:28:18,363][INFO ][o.e.c.m.MetadataCreateIndexService] [DESKTOP-MTC8R1N] [.ds-ilm-history-5-2022.04.07-000001] creating index, cause [initialize_data_stream], templates [ilm-history], shards [1]/[0]
+[2022-04-08T01:28:18,371][INFO ][o.e.c.m.MetadataCreateDataStreamService] [DESKTOP-MTC8R1N] adding data stream [ilm-history-5] with write index [.ds-ilm-history-5-2022.04.07-000001], backing indices [], and aliases []
+[2022-04-08T01:28:18,519][INFO ][o.e.x.i.IndexLifecycleTransition] [DESKTOP-MTC8R1N] moving index [.ds-ilm-history-5-2022.04.07-000001] from [null] to [{"phase":"new","action":"complete","name":"complete"}] in policy [ilm-history-ilm-policy]
+[2022-04-08T01:28:18,625][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.ds-ilm-history-5-2022.04.07-000001][0]]])." previous.health="YELLOW" reason="shards started [[.ds-ilm-history-5-2022.04.07-000001][0]]"
+[2022-04-08T01:28:18,951][INFO ][o.e.x.i.IndexLifecycleTransition] [DESKTOP-MTC8R1N] moving index [.ds-ilm-history-5-2022.04.07-000001] from [{"phase":"new","action":"complete","name":"complete"}] to [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] in policy [ilm-history-ilm-policy]
+[2022-04-08T01:28:19,007][INFO ][o.e.x.i.IndexLifecycleTransition] [DESKTOP-MTC8R1N] moving index [.ds-ilm-history-5-2022.04.07-000001] from [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] to [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}] in policy [ilm-history-ilm-policy]
+[2022-04-08T01:28:34,959][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.kibana_8.1.2_001/hWZW3pekRxKL0N-vEitE6w] update_mapping [_doc]
+[2022-04-08T01:29:08,557][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.kibana_8.1.2_001/hWZW3pekRxKL0N-vEitE6w] update_mapping [_doc]
+[2022-04-08T01:29:16,808][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.kibana_8.1.2_001/hWZW3pekRxKL0N-vEitE6w] update_mapping [_doc]
+[2022-04-08T01:38:10,049][INFO ][o.e.c.m.MetadataCreateIndexService] [DESKTOP-MTC8R1N] [.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001] creating index, cause [initialize_data_stream], templates [.deprecation-indexing-template], shards [1]/[1]
+[2022-04-08T01:38:10,050][INFO ][o.e.c.m.MetadataCreateDataStreamService] [DESKTOP-MTC8R1N] adding data stream [.logs-deprecation.elasticsearch-default] with write index [.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001], backing indices [], and aliases []
+[2022-04-08T01:38:10,053][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] updating number_of_replicas to [0] for indices [.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001]
+[2022-04-08T01:38:10,170][INFO ][o.e.x.i.IndexLifecycleTransition] [DESKTOP-MTC8R1N] moving index [.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001] from [null] to [{"phase":"new","action":"complete","name":"complete"}] in policy [.deprecation-indexing-ilm-policy]
+[2022-04-08T01:38:10,209][INFO ][o.e.x.i.IndexLifecycleTransition] [DESKTOP-MTC8R1N] moving index [.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001] from [{"phase":"new","action":"complete","name":"complete"}] to [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] in policy [.deprecation-indexing-ilm-policy]
+[2022-04-08T01:38:10,240][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001][0]]])." previous.health="YELLOW" reason="shards started [[.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001][0]]"
+[2022-04-08T01:38:10,267][INFO ][o.e.x.i.IndexLifecycleTransition] [DESKTOP-MTC8R1N] moving index [.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001] from [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] to [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}] in policy [.deprecation-indexing-ilm-policy]
+[2022-04-08T01:38:10,308][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001/xqCml53KSnSvqQBLYQn4xA] update_mapping [_doc]
+[2022-04-08T01:42:18,060][INFO ][o.e.c.m.MetadataCreateIndexService] [DESKTOP-MTC8R1N] [.tasks] creating index, cause [auto(bulk api)], templates [], shards [1]/[1]
+[2022-04-08T01:42:18,067][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] updating number_of_replicas to [0] for indices [.tasks]
+[2022-04-08T01:42:18,221][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.tasks][0]]])." previous.health="YELLOW" reason="shards started [[.tasks][0]]"
+[2022-04-08T01:42:18,284][INFO ][o.e.t.LoggingTaskListener] [DESKTOP-MTC8R1N] 18961 finished with response BulkByScrollResponse[took=82.3ms,timed_out=false,sliceId=null,updated=20,created=0,deleted=0,batches=1,versionConflicts=0,noops=0,retries=0,throttledUntil=0s,bulk_failures=[],search_failures=[]]
+[2022-04-08T01:42:18,310][INFO ][o.e.t.LoggingTaskListener] [DESKTOP-MTC8R1N] 18975 finished with response BulkByScrollResponse[took=289.1ms,timed_out=false,sliceId=null,updated=282,created=0,deleted=0,batches=1,versionConflicts=0,noops=0,retries=0,throttledUntil=0s,bulk_failures=[],search_failures=[]]
+[2022-04-08T01:43:16,745][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.kibana_8.1.2_001/hWZW3pekRxKL0N-vEitE6w] update_mapping [_doc]
+[2022-04-08T01:47:55,994][INFO ][o.e.c.m.MetadataMappingService] [DESKTOP-MTC8R1N] [.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001/xqCml53KSnSvqQBLYQn4xA] update_mapping [_doc]
+[2022-04-08T09:39:14,501][WARN ][o.e.t.ThreadPool         ] [DESKTOP-MTC8R1N] timer thread slept for [5.5h/19983788ms] on absolute clock which is above the warn threshold of [5000ms]
+[2022-04-08T09:39:14,523][WARN ][o.e.t.ThreadPool         ] [DESKTOP-MTC8R1N] timer thread slept for [5.5h/19983795476100ns] on relative clock which is above the warn threshold of [5000ms]
+[2022-04-08T09:39:25,010][WARN ][o.e.m.f.FsHealthService  ] [DESKTOP-MTC8R1N] health check of [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\data] took [10399ms] which is above the warn threshold of [5s]
+[2022-04-08T10:03:03,602][INFO ][o.e.x.s.SnapshotRetentionTask] [DESKTOP-MTC8R1N] starting SLM retention snapshot cleanup task
+[2022-04-08T18:46:18,341][INFO ][o.e.x.s.SnapshotRetentionTask] [DESKTOP-MTC8R1N] there are no repositories to fetch, SLM retention snapshot cleanup task complete
+[2022-04-08T20:59:50,556][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:57483}
+[2022-04-08T21:00:01,891][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/[0:0:0:0:0:0:0:1]:9200, remoteAddress=/[0:0:0:0:0:0:0:1]:57500}
+[2022-04-08T21:00:27,799][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/[0:0:0:0:0:0:0:1]:9200, remoteAddress=/[0:0:0:0:0:0:0:1]:57510}
+[2022-04-08T21:02:33,803][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:57533}
+[2022-04-08T21:03:13,030][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/[0:0:0:0:0:0:0:1]:9200, remoteAddress=/[0:0:0:0:0:0:0:1]:57542}
+[2022-04-08T21:03:32,866][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/[0:0:0:0:0:0:0:1]:9200, remoteAddress=/[0:0:0:0:0:0:0:1]:57552}
+[2022-04-08T21:04:14,814][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/[0:0:0:0:0:0:0:1]:9200, remoteAddress=/[0:0:0:0:0:0:0:1]:57564}
+[2022-04-08T21:05:17,707][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:57598}
+[2022-04-08T21:05:48,107][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:57615}
+[2022-04-08T21:08:02,099][INFO ][o.e.x.m.p.NativeController] [DESKTOP-MTC8R1N] Native controller process has stopped - no new native processes can be started
+[2022-04-08T21:08:02,099][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] stopping ...
+[2022-04-08T21:08:02,150][INFO ][o.e.x.w.WatcherService   ] [DESKTOP-MTC8R1N] stopping watch service, reason [shutdown initiated]
+[2022-04-08T21:08:02,150][INFO ][o.e.x.w.WatcherLifeCycleService] [DESKTOP-MTC8R1N] watcher has stopped and shutdown
+[2022-04-08T21:08:02,846][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] stopped
+[2022-04-08T21:08:02,846][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] closing ...
+[2022-04-08T21:08:02,862][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb]
+[2022-04-08T21:08:02,862][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb]
+[2022-04-08T21:08:02,862][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb]
+[2022-04-08T21:08:02,877][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] closed
+[2022-04-08T21:08:24,810][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] version[8.1.2], pid[17372], build[default/zip/31df9689e80bad366ac20176aa7f2371ea5eb4c1/2022-03-29T21:18:59.991429448Z], OS[Windows 10/10.0/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.2/17.0.2+8]
+[2022-04-08T21:09:47,232][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] JVM home [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\jdk], using bundled JDK [true]
+[2022-04-08T21:09:47,232][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -Djava.security.manager=allow, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -XX:+UseG1GC, -Djava.io.tmpdir=C:\Users\Michael\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms8134m, -Xmx8134m, -XX:MaxDirectMemorySize=4265607168, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Delasticsearch, -Des.path.home=C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2, -Des.path.conf=C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config, -Des.distribution.flavor=default, -Des.distribution.type=zip, -Des.bundled_jdk=true]
+[2022-04-08T21:09:57,285][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [aggs-matrix-stats]
+[2022-04-08T21:09:57,285][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [analysis-common]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [constant-keyword]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [data-streams]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [frozen-indices]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-common]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-geoip]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-user-agent]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [kibana]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-expression]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-mustache]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-painless]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [legacy-geo]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [mapper-extras]
+[2022-04-08T21:09:57,301][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [mapper-version]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [old-lucene-versions]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [parent-join]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [percolator]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [rank-eval]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [reindex]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repositories-metering-api]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-azure]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-encrypted]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-gcs]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-s3]
+[2022-04-08T21:09:57,316][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-url]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [runtime-fields-common]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [search-business-rules]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [searchable-snapshots]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [snapshot-based-recoveries]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [snapshot-repo-test-kit]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [spatial]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [transform]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [transport-netty4]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [unsigned-long]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [vector-tile]
+[2022-04-08T21:09:57,332][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [vectors]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [wildcard]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-aggregate-metric]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-analytics]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-async]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-async-search]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-autoscaling]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ccr]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-core]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-deprecation]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-enrich]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-eql]
+[2022-04-08T21:09:57,348][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-fleet]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-graph]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-identity-provider]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ilm]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-logstash]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ml]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-monitoring]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ql]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-rollup]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-security]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-shutdown]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-sql]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-stack]
+[2022-04-08T21:09:57,363][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-text-structure]
+[2022-04-08T21:09:57,379][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-voting-only-node]
+[2022-04-08T21:09:57,379][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-watcher]
+[2022-04-08T21:09:57,379][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] no plugins loaded
+[2022-04-08T21:09:57,832][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-MTC8R1N] using [1] data paths, mounts [[OS (C:)]], net usable_space [112.6gb], net total_space [475.8gb], types [NTFS]
+[2022-04-08T21:09:57,832][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-MTC8R1N] heap size [7.9gb], compressed ordinary object pointers [true]
+[2022-04-08T21:09:58,019][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] node name [DESKTOP-MTC8R1N], node ID [jBBIhB9QSAaxDHHAs6qgSQ], cluster name [elasticsearch], roles [data_cold, data, remote_cluster_client, master, data_warm, data_content, transform, data_hot, ml, data_frozen, ingest]
+[2022-04-08T21:10:03,947][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [DESKTOP-MTC8R1N] [controller/16100] [Main.cc@123] controller (64 bit): Version 8.1.2 (Build aefa35c80ac77e) Copyright (c) 2022 Elasticsearch BV
+[2022-04-08T21:10:04,290][INFO ][o.e.x.s.Security         ] [DESKTOP-MTC8R1N] Security is enabled
+[2022-04-08T21:10:04,837][INFO ][o.e.x.s.a.Realms         ] [DESKTOP-MTC8R1N] license mode is [trial], currently licensed security realms are [reserved/reserved,file/default_file,native/default_native]
+[2022-04-08T21:10:04,852][INFO ][o.e.x.s.a.s.FileRolesStore] [DESKTOP-MTC8R1N] parsed [0] roles from file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\roles.yml]
+[2022-04-08T21:10:05,587][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb]
+[2022-04-08T21:10:05,587][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb_COPYRIGHT.txt]
+[2022-04-08T21:10:05,587][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-04-08T21:10:05,587][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb_LICENSE.txt]
+[2022-04-08T21:10:05,587][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb]
+[2022-04-08T21:10:05,587][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_COPYRIGHT.txt]
+[2022-04-08T21:10:05,602][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-04-08T21:10:05,602][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_LICENSE.txt]
+[2022-04-08T21:10:05,602][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_README.txt]
+[2022-04-08T21:10:05,602][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb]
+[2022-04-08T21:10:05,602][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb_COPYRIGHT.txt]
+[2022-04-08T21:10:05,602][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-04-08T21:10:05,618][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb_LICENSE.txt]
+[2022-04-08T21:10:06,411][INFO ][o.e.t.n.NettyAllocator   ] [DESKTOP-MTC8R1N] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=4mb}]
+[2022-04-08T21:10:06,458][INFO ][o.e.i.r.RecoverySettings ] [DESKTOP-MTC8R1N] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+[2022-04-08T21:10:06,504][INFO ][o.e.d.DiscoveryModule    ] [DESKTOP-MTC8R1N] using discovery type [multi-node] and seed hosts providers [settings]
+[2022-04-08T21:10:07,723][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] initialized
+[2022-04-08T21:10:07,723][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] starting ...
+[2022-04-08T21:10:07,738][INFO ][o.e.x.s.c.f.PersistentCache] [DESKTOP-MTC8R1N] persistent cache index loaded
+[2022-04-08T21:10:07,738][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [DESKTOP-MTC8R1N] deprecation component started
+[2022-04-08T21:10:07,957][ERROR][o.e.b.Bootstrap          ] [DESKTOP-MTC8R1N] Exception
+org.elasticsearch.transport.BindTransportException: Failed to bind to 192.168.0.1:[9300-9400]
+	at org.elasticsearch.transport.TcpTransport.bindToPort(TcpTransport.java:490) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.transport.TcpTransport.bindServer(TcpTransport.java:451) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.transport.netty4.Netty4Transport.doStart(Netty4Transport.java:147) ~[?:?]
+	at org.elasticsearch.xpack.core.security.transport.netty4.SecurityNetty4Transport.doStart(SecurityNetty4Transport.java:96) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.netty4.SecurityNetty4ServerTransport.doStart(SecurityNetty4ServerTransport.java:59) ~[?:?]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:48) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.transport.TransportService.doStart(TransportService.java:270) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:48) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.node.Node.start(Node.java:1134) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:272) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:367) [elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:166) [elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:157) [elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.common.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:81) [elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:112) [elasticsearch-cli-8.1.2.jar:8.1.2]
+	at org.elasticsearch.cli.Command.main(Command.java:77) [elasticsearch-cli-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:122) [elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:80) [elasticsearch-8.1.2.jar:8.1.2]
+Caused by: java.net.BindException: Cannot assign requested address: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:555) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294) ~[?:?]
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134) ~[?:?]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562) ~[?:?]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491) ~[?:?]
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973) ~[?:?]
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260) ~[?:?]
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356) ~[?:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164) ~[?:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503) ~[?:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) ~[?:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[2022-04-08T21:10:07,957][ERROR][o.e.b.ElasticsearchUncaughtExceptionHandler] [DESKTOP-MTC8R1N] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: org.elasticsearch.transport.BindTransportException: Failed to bind to 192.168.0.1:[9300-9400]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:157) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.common.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:81) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:112) ~[elasticsearch-cli-8.1.2.jar:8.1.2]
+	at org.elasticsearch.cli.Command.main(Command.java:77) ~[elasticsearch-cli-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:122) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:80) ~[elasticsearch-8.1.2.jar:8.1.2]
+Caused by: org.elasticsearch.transport.BindTransportException: Failed to bind to 192.168.0.1:[9300-9400]
+	at org.elasticsearch.transport.TcpTransport.bindToPort(TcpTransport.java:490) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.transport.TcpTransport.bindServer(TcpTransport.java:451) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.transport.netty4.Netty4Transport.doStart(Netty4Transport.java:147) ~[?:?]
+	at org.elasticsearch.xpack.core.security.transport.netty4.SecurityNetty4Transport.doStart(SecurityNetty4Transport.java:96) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.netty4.SecurityNetty4ServerTransport.doStart(SecurityNetty4ServerTransport.java:59) ~[?:?]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:48) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.transport.TransportService.doStart(TransportService.java:270) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:48) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.node.Node.start(Node.java:1134) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:272) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:367) ~[elasticsearch-8.1.2.jar:8.1.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:166) ~[elasticsearch-8.1.2.jar:8.1.2]
+	... 6 more
+Caused by: java.net.BindException: Cannot assign requested address: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:555) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294) ~[?:?]
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134) ~[?:?]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562) ~[?:?]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491) ~[?:?]
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973) ~[?:?]
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260) ~[?:?]
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356) ~[?:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164) ~[?:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503) ~[?:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) ~[?:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2022-04-08T21:10:08,796][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] stopping ...
+[2022-04-08T21:10:08,839][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] stopped
+[2022-04-08T21:10:08,839][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] closing ...
+[2022-04-08T21:10:08,854][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] closed
+[2022-04-08T21:11:08,571][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] version[8.1.2], pid[12720], build[default/zip/31df9689e80bad366ac20176aa7f2371ea5eb4c1/2022-03-29T21:18:59.991429448Z], OS[Windows 10/10.0/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.2/17.0.2+8]
+[2022-04-08T21:11:08,587][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] JVM home [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\jdk], using bundled JDK [true]
+[2022-04-08T21:11:08,587][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -Djava.security.manager=allow, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -XX:+UseG1GC, -Djava.io.tmpdir=C:\Users\Michael\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms8134m, -Xmx8134m, -XX:MaxDirectMemorySize=4265607168, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Delasticsearch, -Des.path.home=C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2, -Des.path.conf=C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config, -Des.distribution.flavor=default, -Des.distribution.type=zip, -Des.bundled_jdk=true]
+[2022-04-08T21:11:12,835][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [aggs-matrix-stats]
+[2022-04-08T21:11:12,835][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [analysis-common]
+[2022-04-08T21:11:12,835][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [constant-keyword]
+[2022-04-08T21:11:12,835][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [data-streams]
+[2022-04-08T21:11:12,835][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [frozen-indices]
+[2022-04-08T21:11:12,835][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-common]
+[2022-04-08T21:11:12,835][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-geoip]
+[2022-04-08T21:11:12,835][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-user-agent]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [kibana]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-expression]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-mustache]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-painless]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [legacy-geo]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [mapper-extras]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [mapper-version]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [old-lucene-versions]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [parent-join]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [percolator]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [rank-eval]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [reindex]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repositories-metering-api]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-azure]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-encrypted]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-gcs]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-s3]
+[2022-04-08T21:11:12,850][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-url]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [runtime-fields-common]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [search-business-rules]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [searchable-snapshots]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [snapshot-based-recoveries]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [snapshot-repo-test-kit]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [spatial]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [transform]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [transport-netty4]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [unsigned-long]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [vector-tile]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [vectors]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [wildcard]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-aggregate-metric]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-analytics]
+[2022-04-08T21:11:12,866][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-async]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-async-search]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-autoscaling]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ccr]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-core]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-deprecation]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-enrich]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-eql]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-fleet]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-graph]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-identity-provider]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ilm]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-logstash]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ml]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-monitoring]
+[2022-04-08T21:11:12,882][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ql]
+[2022-04-08T21:11:12,897][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-rollup]
+[2022-04-08T21:11:12,897][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-security]
+[2022-04-08T21:11:12,897][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-shutdown]
+[2022-04-08T21:11:12,897][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-sql]
+[2022-04-08T21:11:12,897][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-stack]
+[2022-04-08T21:11:12,897][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-text-structure]
+[2022-04-08T21:11:12,897][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-voting-only-node]
+[2022-04-08T21:11:12,897][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-watcher]
+[2022-04-08T21:11:12,897][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] no plugins loaded
+[2022-04-08T21:11:13,194][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-MTC8R1N] using [1] data paths, mounts [[OS (C:)]], net usable_space [114.2gb], net total_space [475.8gb], types [NTFS]
+[2022-04-08T21:11:13,194][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-MTC8R1N] heap size [7.9gb], compressed ordinary object pointers [true]
+[2022-04-08T21:11:13,350][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] node name [DESKTOP-MTC8R1N], node ID [jBBIhB9QSAaxDHHAs6qgSQ], cluster name [elasticsearch], roles [data_hot, transform, data_content, data_warm, master, remote_cluster_client, data, data_cold, ingest, data_frozen, ml]
+[2022-04-08T21:11:19,409][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [DESKTOP-MTC8R1N] [controller/15760] [Main.cc@123] controller (64 bit): Version 8.1.2 (Build aefa35c80ac77e) Copyright (c) 2022 Elasticsearch BV
+[2022-04-08T21:11:19,690][INFO ][o.e.x.s.Security         ] [DESKTOP-MTC8R1N] Security is enabled
+[2022-04-08T21:11:20,003][INFO ][o.e.x.s.a.Realms         ] [DESKTOP-MTC8R1N] license mode is [trial], currently licensed security realms are [reserved/reserved,file/default_file,native/default_native]
+[2022-04-08T21:11:20,018][INFO ][o.e.x.s.a.s.FileRolesStore] [DESKTOP-MTC8R1N] parsed [0] roles from file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\roles.yml]
+[2022-04-08T21:11:21,426][INFO ][o.e.t.n.NettyAllocator   ] [DESKTOP-MTC8R1N] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=4mb}]
+[2022-04-08T21:11:21,457][INFO ][o.e.i.r.RecoverySettings ] [DESKTOP-MTC8R1N] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+[2022-04-08T21:11:21,489][INFO ][o.e.d.DiscoveryModule    ] [DESKTOP-MTC8R1N] using discovery type [multi-node] and seed hosts providers [settings]
+[2022-04-08T21:11:22,646][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] initialized
+[2022-04-08T21:11:22,646][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] starting ...
+[2022-04-08T21:11:22,677][INFO ][o.e.x.s.c.f.PersistentCache] [DESKTOP-MTC8R1N] persistent cache index loaded
+[2022-04-08T21:11:22,677][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [DESKTOP-MTC8R1N] deprecation component started
+[2022-04-08T21:11:22,849][INFO ][o.e.t.TransportService   ] [DESKTOP-MTC8R1N] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}
+[2022-04-08T21:11:23,378][INFO ][o.e.c.c.Coordinator      ] [DESKTOP-MTC8R1N] cluster UUID [92OwXvkPS3KNtv8FwgwOYQ]
+[2022-04-08T21:11:23,615][INFO ][o.e.c.s.MasterService    ] [DESKTOP-MTC8R1N] elected-as-master ([1] nodes joined)[{DESKTOP-MTC8R1N}{jBBIhB9QSAaxDHHAs6qgSQ}{DuTn1zfySMWZ5UmgMbzlkw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} completing election, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 5, version: 147, delta: master node changed {previous [], current [{DESKTOP-MTC8R1N}{jBBIhB9QSAaxDHHAs6qgSQ}{DuTn1zfySMWZ5UmgMbzlkw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2022-04-08T21:11:23,756][INFO ][o.e.c.s.ClusterApplierService] [DESKTOP-MTC8R1N] master node changed {previous [], current [{DESKTOP-MTC8R1N}{jBBIhB9QSAaxDHHAs6qgSQ}{DuTn1zfySMWZ5UmgMbzlkw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 5, version: 147, reason: Publication{term=5, version=147}
+[2022-04-08T21:11:23,907][INFO ][o.e.h.AbstractHttpServerTransport] [DESKTOP-MTC8R1N] publish_address {192.168.178.23:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}, {192.168.178.23:9200}
+[2022-04-08T21:11:23,923][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] started
+[2022-04-08T21:11:24,243][INFO ][o.e.l.LicenseService     ] [DESKTOP-MTC8R1N] license [20b5b0b8-b3a4-4c91-b70d-82789cab8b4a] mode [basic] - valid
+[2022-04-08T21:11:24,258][INFO ][o.e.x.s.a.Realms         ] [DESKTOP-MTC8R1N] license mode is [basic], currently licensed security realms are [reserved/reserved,file/default_file,native/default_native]
+[2022-04-08T21:11:24,258][INFO ][o.e.g.GatewayService     ] [DESKTOP-MTC8R1N] recovered [11] indices into cluster_state
+[2022-04-08T21:11:26,264][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-ASN.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb.tmp.gz]
+[2022-04-08T21:11:26,264][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-Country.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb.tmp.gz]
+[2022-04-08T21:11:26,264][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-City.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb.tmp.gz]
+[2022-04-08T21:11:26,664][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-Country.mmdb]
+[2022-04-08T21:11:26,634][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] current.health="GREEN" message="Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001][0], [.kibana-event-log-8.1.2-000001][0], [.ds-ilm-history-5-2022.04.07-000001][0]]])." previous.health="RED" reason="shards started [[.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001][0], [.kibana-event-log-8.1.2-000001][0], [.ds-ilm-history-5-2022.04.07-000001][0]]"
+[2022-04-08T21:11:26,963][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-ASN.mmdb]
+[2022-04-08T21:11:28,338][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-ASN.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb.tmp.gz]
+[2022-04-08T21:11:28,338][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-City.mmdb]
+[2022-04-08T21:11:28,346][INFO ][o.e.i.g.GeoIpDownloader  ] [DESKTOP-MTC8R1N] successfully downloaded geoip database [GeoLite2-ASN.mmdb]
+[2022-04-08T21:11:28,533][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb]
+[2022-04-08T21:11:28,549][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-ASN.mmdb]
+[2022-04-08T21:11:38,312][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-City.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb.tmp.gz]
+[2022-04-08T21:11:38,312][INFO ][o.e.i.g.GeoIpDownloader  ] [DESKTOP-MTC8R1N] successfully downloaded geoip database [GeoLite2-City.mmdb]
+[2022-04-08T21:11:39,298][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb]
+[2022-04-08T21:11:39,298][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-City.mmdb]
+[2022-04-08T21:11:39,437][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-Country.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb.tmp.gz]
+[2022-04-08T21:11:39,437][INFO ][o.e.i.g.GeoIpDownloader  ] [DESKTOP-MTC8R1N] successfully downloaded geoip database [GeoLite2-Country.mmdb]
+[2022-04-08T21:11:39,516][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb]
+[2022-04-08T21:11:39,516][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-Country.mmdb]
+[2022-04-08T21:16:32,021][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:57949}
+[2022-04-08T21:16:50,659][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:57958}
+[2022-04-08T21:43:07,539][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:58060}
+[2022-04-08T21:47:40,414][INFO ][o.e.t.LoggingTaskListener] [DESKTOP-MTC8R1N] 24976 finished with response BulkByScrollResponse[took=175.9ms,timed_out=false,sliceId=null,updated=20,created=0,deleted=0,batches=1,versionConflicts=0,noops=0,retries=0,throttledUntil=0s,bulk_failures=[],search_failures=[]]
+[2022-04-08T21:47:40,622][INFO ][o.e.t.LoggingTaskListener] [DESKTOP-MTC8R1N] 24990 finished with response BulkByScrollResponse[took=250ms,timed_out=false,sliceId=null,updated=359,created=0,deleted=0,batches=1,versionConflicts=0,noops=0,retries=0,throttledUntil=0s,bulk_failures=[],search_failures=[]]
+[2022-04-08T21:47:44,175][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [DESKTOP-MTC8R1N] updating index lifecycle policy [.alerts-ilm-policy]
+[2022-04-08T21:47:44,462][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [DESKTOP-MTC8R1N] updating index lifecycle policy [.preview.alerts-security.alerts-policy]
+[2022-04-08T21:52:14,328][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:55585}
+[2022-04-08T21:52:22,134][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:55594}
+[2022-04-08T21:53:18,323][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:55606}
+[2022-04-08T21:53:55,039][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:55617}
+[2022-04-08T21:53:57,842][INFO ][o.e.x.m.p.NativeController] [DESKTOP-MTC8R1N] Native controller process has stopped - no new native processes can be started
+[2022-04-08T21:53:57,842][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] stopping ...
+[2022-04-08T21:53:57,857][INFO ][o.e.x.w.WatcherService   ] [DESKTOP-MTC8R1N] stopping watch service, reason [shutdown initiated]
+[2022-04-08T21:53:57,857][INFO ][o.e.x.w.WatcherLifeCycleService] [DESKTOP-MTC8R1N] watcher has stopped and shutdown
+[2022-04-08T21:53:58,200][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] stopped
+[2022-04-08T21:53:58,200][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] closing ...
+[2022-04-08T21:53:58,216][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb]
+[2022-04-08T21:53:58,216][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb]
+[2022-04-08T21:53:58,216][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb]
+[2022-04-08T21:53:58,216][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] closed
+[2022-04-08T21:54:18,200][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] version[8.1.2], pid[9408], build[default/zip/31df9689e80bad366ac20176aa7f2371ea5eb4c1/2022-03-29T21:18:59.991429448Z], OS[Windows 10/10.0/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.2/17.0.2+8]
+[2022-04-08T21:54:18,200][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] JVM home [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\jdk], using bundled JDK [true]
+[2022-04-08T21:54:18,200][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -Djava.security.manager=allow, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -XX:+UseG1GC, -Djava.io.tmpdir=C:\Users\Michael\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms8134m, -Xmx8134m, -XX:MaxDirectMemorySize=4265607168, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Delasticsearch, -Des.path.home=C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2, -Des.path.conf=C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config, -Des.distribution.flavor=default, -Des.distribution.type=zip, -Des.bundled_jdk=true]
+[2022-04-08T21:54:22,646][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [aggs-matrix-stats]
+[2022-04-08T21:54:22,646][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [analysis-common]
+[2022-04-08T21:54:22,646][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [constant-keyword]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [data-streams]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [frozen-indices]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-common]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-geoip]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [ingest-user-agent]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [kibana]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-expression]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-mustache]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [lang-painless]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [legacy-geo]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [mapper-extras]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [mapper-version]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [old-lucene-versions]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [parent-join]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [percolator]
+[2022-04-08T21:54:22,662][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [rank-eval]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [reindex]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repositories-metering-api]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-azure]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-encrypted]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-gcs]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-s3]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [repository-url]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [runtime-fields-common]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [search-business-rules]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [searchable-snapshots]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [snapshot-based-recoveries]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [snapshot-repo-test-kit]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [spatial]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [transform]
+[2022-04-08T21:54:22,678][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [transport-netty4]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [unsigned-long]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [vector-tile]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [vectors]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [wildcard]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-aggregate-metric]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-analytics]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-async]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-async-search]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-autoscaling]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ccr]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-core]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-deprecation]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-enrich]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-eql]
+[2022-04-08T21:54:22,693][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-fleet]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-graph]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-identity-provider]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ilm]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-logstash]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ml]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-monitoring]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-ql]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-rollup]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-security]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-shutdown]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-sql]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-stack]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-text-structure]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-voting-only-node]
+[2022-04-08T21:54:22,709][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] loaded module [x-pack-watcher]
+[2022-04-08T21:54:22,724][INFO ][o.e.p.PluginsService     ] [DESKTOP-MTC8R1N] no plugins loaded
+[2022-04-08T21:54:23,021][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-MTC8R1N] using [1] data paths, mounts [[OS (C:)]], net usable_space [113.8gb], net total_space [475.8gb], types [NTFS]
+[2022-04-08T21:54:23,037][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-MTC8R1N] heap size [7.9gb], compressed ordinary object pointers [true]
+[2022-04-08T21:54:23,162][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] node name [DESKTOP-MTC8R1N], node ID [jBBIhB9QSAaxDHHAs6qgSQ], cluster name [elasticsearch], roles [ingest, data_frozen, ml, data_hot, transform, data_content, data_warm, master, remote_cluster_client, data, data_cold]
+[2022-04-08T21:54:28,670][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [DESKTOP-MTC8R1N] [controller/17384] [Main.cc@123] controller (64 bit): Version 8.1.2 (Build aefa35c80ac77e) Copyright (c) 2022 Elasticsearch BV
+[2022-04-08T21:54:28,977][INFO ][o.e.x.s.Security         ] [DESKTOP-MTC8R1N] Security is enabled
+[2022-04-08T21:54:29,305][INFO ][o.e.x.s.a.Realms         ] [DESKTOP-MTC8R1N] license mode is [trial], currently licensed security realms are [reserved/reserved,file/default_file,native/default_native]
+[2022-04-08T21:54:29,321][INFO ][o.e.x.s.a.s.FileRolesStore] [DESKTOP-MTC8R1N] parsed [0] roles from file [C:\Users\Michael\Downloads\elasticsearch-8.1.2-windows-x86_64\elasticsearch-8.1.2\config\roles.yml]
+[2022-04-08T21:54:30,180][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb]
+[2022-04-08T21:54:30,180][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb_COPYRIGHT.txt]
+[2022-04-08T21:54:30,180][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-04-08T21:54:30,180][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb_LICENSE.txt]
+[2022-04-08T21:54:30,180][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb]
+[2022-04-08T21:54:30,196][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_COPYRIGHT.txt]
+[2022-04-08T21:54:30,196][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-04-08T21:54:30,196][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_LICENSE.txt]
+[2022-04-08T21:54:30,196][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb_README.txt]
+[2022-04-08T21:54:30,196][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb]
+[2022-04-08T21:54:30,211][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb_COPYRIGHT.txt]
+[2022-04-08T21:54:30,211][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-04-08T21:54:30,211][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] deleting stale file [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb_LICENSE.txt]
+[2022-04-08T21:54:30,913][INFO ][o.e.t.n.NettyAllocator   ] [DESKTOP-MTC8R1N] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=4mb}]
+[2022-04-08T21:54:30,945][INFO ][o.e.i.r.RecoverySettings ] [DESKTOP-MTC8R1N] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+[2022-04-08T21:54:30,976][INFO ][o.e.d.DiscoveryModule    ] [DESKTOP-MTC8R1N] using discovery type [multi-node] and seed hosts providers [settings]
+[2022-04-08T21:54:32,210][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] initialized
+[2022-04-08T21:54:32,210][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] starting ...
+[2022-04-08T21:54:32,241][INFO ][o.e.x.s.c.f.PersistentCache] [DESKTOP-MTC8R1N] persistent cache index loaded
+[2022-04-08T21:54:32,241][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [DESKTOP-MTC8R1N] deprecation component started
+[2022-04-08T21:54:32,457][INFO ][o.e.t.TransportService   ] [DESKTOP-MTC8R1N] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2022-04-08T21:54:33,033][INFO ][o.e.c.c.Coordinator      ] [DESKTOP-MTC8R1N] cluster UUID [92OwXvkPS3KNtv8FwgwOYQ]
+[2022-04-08T21:54:33,217][INFO ][o.e.c.s.MasterService    ] [DESKTOP-MTC8R1N] elected-as-master ([1] nodes joined)[{DESKTOP-MTC8R1N}{jBBIhB9QSAaxDHHAs6qgSQ}{MvWDBla5QouHy1uZ6jpusw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} completing election, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 6, version: 166, delta: master node changed {previous [], current [{DESKTOP-MTC8R1N}{jBBIhB9QSAaxDHHAs6qgSQ}{MvWDBla5QouHy1uZ6jpusw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2022-04-08T21:54:33,358][INFO ][o.e.c.s.ClusterApplierService] [DESKTOP-MTC8R1N] master node changed {previous [], current [{DESKTOP-MTC8R1N}{jBBIhB9QSAaxDHHAs6qgSQ}{MvWDBla5QouHy1uZ6jpusw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 6, version: 166, reason: Publication{term=6, version=166}
+[2022-04-08T21:54:33,500][INFO ][o.e.h.AbstractHttpServerTransport] [DESKTOP-MTC8R1N] publish_address {192.168.178.23:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}, {192.168.178.23:9200}
+[2022-04-08T21:54:33,516][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] started
+[2022-04-08T21:54:33,785][INFO ][o.e.l.LicenseService     ] [DESKTOP-MTC8R1N] license [20b5b0b8-b3a4-4c91-b70d-82789cab8b4a] mode [basic] - valid
+[2022-04-08T21:54:33,785][INFO ][o.e.x.s.a.Realms         ] [DESKTOP-MTC8R1N] license mode is [basic], currently licensed security realms are [reserved/reserved,file/default_file,native/default_native]
+[2022-04-08T21:54:33,800][INFO ][o.e.g.GatewayService     ] [DESKTOP-MTC8R1N] recovered [11] indices into cluster_state
+[2022-04-08T21:54:35,572][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-Country.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb.tmp.gz]
+[2022-04-08T21:54:35,587][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-City.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb.tmp.gz]
+[2022-04-08T21:54:35,591][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] retrieve geoip database [GeoLite2-ASN.mmdb] from [.geoip_databases] to [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb.tmp.gz]
+[2022-04-08T21:54:35,934][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-Country.mmdb]
+[2022-04-08T21:54:36,043][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-ASN.mmdb]
+[2022-04-08T21:54:36,472][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-MTC8R1N] current.health="GREEN" message="Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.kibana-event-log-8.1.2-000001][0], [.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001][0], [.ds-ilm-history-5-2022.04.07-000001][0]]])." previous.health="RED" reason="shards started [[.kibana-event-log-8.1.2-000001][0], [.ds-.logs-deprecation.elasticsearch-default-2022.04.07-000001][0], [.ds-ilm-history-5-2022.04.07-000001][0]]"
+[2022-04-08T21:54:37,322][INFO ][o.e.i.g.DatabaseNodeService] [DESKTOP-MTC8R1N] successfully loaded geoip database file [GeoLite2-City.mmdb]
+[2022-04-08T21:55:02,921][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:55715}
+[2022-04-08T21:55:55,072][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:55729}
+[2022-04-08T21:56:23,115][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [DESKTOP-MTC8R1N] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:55740}
+[2022-04-08T23:21:14,768][INFO ][o.e.x.m.p.NativeController] [DESKTOP-MTC8R1N] Native controller process has stopped - no new native processes can be started
+[2022-04-08T23:21:14,773][INFO ][o.e.b.Bootstrap          ] [DESKTOP-MTC8R1N] running graceful exit on windows
+[2022-04-08T23:21:14,774][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] stopping ...
+[2022-04-08T23:21:14,791][INFO ][o.e.x.w.WatcherService   ] [DESKTOP-MTC8R1N] stopping watch service, reason [shutdown initiated]
+[2022-04-08T23:21:14,794][INFO ][o.e.x.w.WatcherLifeCycleService] [DESKTOP-MTC8R1N] watcher has stopped and shutdown
+[2022-04-08T23:21:15,149][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] stopped
+[2022-04-08T23:21:15,153][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] closing ...
+[2022-04-08T23:21:15,198][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-Country.mmdb]
+[2022-04-08T23:21:15,201][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-ASN.mmdb]
+[2022-04-08T23:21:15,205][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [DESKTOP-MTC8R1N] evicted [0] entries from cache after reloading database [C:\Users\Michael\AppData\Local\Temp\elasticsearch\geoip-databases\jBBIhB9QSAaxDHHAs6qgSQ\GeoLite2-City.mmdb]
+[2022-04-08T23:21:15,218][INFO ][o.e.n.Node               ] [DESKTOP-MTC8R1N] closed
