@@ -1,0 +1,3 @@
+/*! Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one or more contributor license agreements. 
+ * Licensed under the Elastic License 2.0; you may not use this file except in compliance with the Elastic License 2.0. */
+(window.apm_bundle_jsonpfunction=window.apm_bundle_jsonpfunction||[]).push([[21],{1044:function(n,i,o){"use strict";o.r(i),o.d(i,"CreateAPMPolicyForm",(function(){return a}));var u=o(1),t=o.n(u),e=o(469);function a({newPolicy:n,onChange:i}){const[o,...u]=null==n?void 0:n.inputs,a=null==o?void 0:o.vars;return t.a.createElement(e.a,{vars:a,updateAPMPolicy:function(t,e){i({isValid:e,updatedPolicy:{...n,inputs:[{...o,vars:t},...u]}})},isCloudPolicy:!1})}}}]);
